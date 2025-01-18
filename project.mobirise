@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "Li.fi",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#232323",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": false,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/lifi.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://app-lifi.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap : https://app-lifi.github.io/sitemap.xml",
+    "mbrsiteDomain": "rhxitncvxf",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "LiFI | Lifi Swap | Li Fi Bridge",
+        "meta_descr": "Benefit from risk mitigation, fail safety and neatless interoperability by a vast amount of underlying protocols (e.g. DEX aggregators & bridges), which LI.FI aggregates.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://lifi.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/li.fi.png\" alt=\"Lifi\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uAdDQcZPsR",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>LiFi Swap: Transforming Digital Asset Exchanges through Light Technology</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction :</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the rapidly evolving world of cryptocurrency and decentralized finance (DeFi), innovative technologies are emerging to enhance the way we transact and exchange digital assets. Among these is LiFi Swap, a groundbreaking protocol that leverages Li-Fi (Light Fidelity) technology to facilitate seamless and ultra-fast digital asset exchanges. By utilizing the visible light spectrum, <a href=\"https://app-lifi.github.io/\" class=\"text-primary\"><b>LiFi Swap</b></a> aims to revolutionize how users interact with blockchain networks, offering unique advantages over traditional exchange methods. This blog will explore the workings of LiFi Swap, its benefits, use cases, challenges, and the future of this innovative technology in the digital asset space.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is LiFi?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Before delving into <a href=\"https://li.fi/\" class=\"text-primary\"><b>LiFi Swap</b></a>, it's essential to understand what Li-Fi is. Li-Fi refers to wireless communication technology that uses light to transmit data, as opposed to traditional radio frequency methods like Wi-Fi. Developed by Professor Harald Haas, Li-Fi operates on the principle of visible light communication (VLC), allowing data to be transmitted at high speeds through light-emitting diodes (LEDs).<br><br><b>Key Characteristics of Li-Fi</b><br><b>High-Speed Data Transfer:</b> Li-Fi can achieve data rates significantly higher than Wi-Fi, with speeds reaching up to 10 Gbps or more under optimal conditions.<br><b>Enhanced Security:</b> Li-Fi operates within the visible light spectrum, making it more secure than radio waves. Since light cannot penetrate walls, it reduces the risk of eavesdropping by unwanted devices.<br><b>Reduced Congestion:</b> With an abundance of bandwidth in the visible light spectrum, Li-Fi can reduce congestion typically experienced in radio frequency communication, especially in densely populated areas.<br><b>Energy Efficiency:</b> LED lights used in Li-Fi technology are energy-efficient and can be integrated into existing lighting infrastructure, making it a sustainable choice for communication.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is LiFi Swap?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">LiFi Swap is a decentralized exchange (DEX) protocol that utilizes Li-Fi technology to enable fast, efficient, and secure asset swaps. By combining the benefits of Li-Fi with blockchain technology, LiFi Swap facilitates peer-to-peer transactions without the need for intermediaries. This innovative approach aims to enhance the overall user experience in the digital asset space, making swaps quicker, cheaper, and more secure.<br><br><b>How LiFi Swap Works</b><br>LiFi Swap operates on the principles of both Li-Fi technology and blockchain. Here’s a breakdown of how it works:<br><br><b>Light-Based Data Transmission:</b> Users can initiate a swap by transmitting data through Li-Fi signals. The LED lights act as transmitters, encoding transaction data into light pulses that can be received by compatible devices equipped with photodetectors.<br><b>Blockchain Integration:</b> Once the data is transmitted, it is recorded on the blockchain, ensuring transparency and security. Smart contracts are utilized to automate the swapping process, enabling trustless transactions between parties.<br><b>User Interface:</b> LiFi Swap provides an intuitive user interface that allows users to select the assets they wish to swap, view real-time market data, and execute trades seamlessly. The integration of Li-Fi technology ensures that transactions occur at lightning speed.<br><b>Decentralization:</b> As a decentralized exchange, LiFi Swap eliminates the need for a central authority, giving users full control over their assets. This approach aligns with the core principles of the cryptocurrency space—transparency, autonomy, and security.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Advantages of LiFi Swap</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">LiFi Swap presents several advantages that set it apart from traditional exchanges and even other decentralized platforms:<br><br>1. Lightning-Fast Transactions<br>One of the most significant benefits of LiFi Swap is its ability to facilitate ultra-fast transactions. By leveraging Li-Fi technology, users can execute swaps in a matter of seconds, significantly improving the trading experience.<br><br>2. Enhanced Security<br>The use of light for data transmission enhances security, as signals cannot penetrate walls and are less susceptible to interference. This characteristic reduces the risk of hacking and data breaches commonly associated with traditional exchanges.<br><br>3. Cost-Effective Swaps<br>LiFi Swap aims to minimize transaction fees associated with asset swaps. By eliminating intermediaries and utilizing a decentralized model, users can enjoy lower fees compared to centralized exchanges.<br><br>4. Greater Accessibility<br>LiFi technology can be integrated into various environments, such as homes, offices, and public spaces. This accessibility opens up opportunities for users to conduct transactions in locations where internet connectivity may be limited, thereby enhancing the overall reach of digital asset trading.<br><br>5. Environmental Sustainability<br>LiFi Swap leverages energy-efficient LED lighting for data transmission, aligning with sustainability goals. This eco-friendly approach reduces the carbon footprint associated with traditional data centers and communication technologies.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Use Cases of LiFi Swap</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">LiFi Swap has the potential to disrupt various sectors within the digital asset ecosystem. Here are some notable use cases:<br><br>1. Peer-to-Peer Trading<br>LiFi Swap facilitates seamless peer-to-peer trading, allowing users to exchange digital assets directly without relying on a centralized authority. This feature is particularly beneficial for users seeking privacy and control over their transactions.<br><br>2. Decentralized Finance (DeFi)<br>As DeFi continues to gain traction, LiFi Swap can serve as a vital component of the ecosystem. Users can swap tokens, provide liquidity, and participate in yield farming while enjoying the benefits of fast and secure transactions.<br><br>3. NFT Trading<br>The rise of non-fungible tokens (NFTs) has created new opportunities for digital asset trading. LiFi Swap can enable quick and efficient swaps of NFTs, allowing collectors and creators to engage in the vibrant NFT marketplace easily.<br><br>4. Micropayments<br>LiFi Swap’s low transaction fees and fast speeds make it ideal for micropayments. Users can conduct small transactions efficiently, such as tipping content creators or paying for digital services, without incurring significant fees.<br><br>5. Cross-Border Transactions<br>For users in different regions, LiFi Swap can facilitate cross-border transactions with ease. The speed and security of the platform can help users avoid the delays and costs often associated with international money transfers.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges Facing LiFi Swap</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">While LiFi Swap presents exciting opportunities, it also faces several challenges that must be addressed for widespread adoption:<br><br>1. Infrastructure Limitations<br>Li-Fi technology requires specific infrastructure, including compatible LED lights and photodetectors. Widespread implementation will necessitate significant investment in infrastructure upgrades.<br><br>2. Limited Range<br>Li-Fi signals have a limited range and require a direct line of sight. This limitation may pose challenges in scenarios where users are not in close proximity to the light source.<br><br>3. Regulatory Compliance<br>As with any cryptocurrency project, LiFi Swap will need to navigate regulatory challenges. Compliance with local laws and regulations can impact its operations and user adoption.<br><br>4. Market Competition<br>The decentralized exchange landscape is highly competitive, with numerous players vying for market share. LiFi Swap will need to differentiate itself through unique features and superior user experience to stand out.<br><br>5. User Education<br>For many users, the concept of Li-Fi and its applications in cryptocurrency may be unfamiliar. Educating users about the technology and its benefits will be crucial for driving adoption.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of LiFi Swap</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The future of LiFi Swap appears promising as the demand for efficient and secure digital asset exchanges continues to grow. Here are some trends and developments to watch for:<br><br>1. Increased Adoption of Li-Fi Technology<br>As awareness of Li-Fi technology grows, more businesses and individuals may adopt it for various applications, including digital asset trading. This increased adoption could create a robust ecosystem for LiFi Swap.<br><br>2. Integration with Other Technologies<br>LiFi Swap may explore integration with other emerging technologies, such as artificial intelligence (AI) and machine learning (ML), to enhance trading strategies, market analysis, and user experience.<br><br>3. Expansion of Use Cases<br>As the platform matures, LiFi Swap may expand its use cases beyond asset swapping to include features like lending, borrowing, and automated trading strategies, further enriching the DeFi ecosystem.<br><br>4. Improved User Interfaces<br>To attract a broader audience, LiFi Swap will likely focus on enhancing its user interface and overall user experience. Simplified navigation and intuitive design can facilitate easier access for newcomers.<br><br>5. Global Partnerships<br>Collaborating with other blockchain projects, businesses, and institutions can help LiFi Swap expand its reach and establish itself as a leading decentralized exchange in the market.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Getting Started with LiFi Swap</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">If you’re interested in using LiFi Swap for digital asset exchanges, here’s a step-by-step guide to get started:<br><br>Step 1: Set Up Your Wallet<br>First, ensure you have a compatible cryptocurrency wallet that supports the tokens you want to swap. Popular wallets include MetaMask, Trust Wallet, and Ledger.<br><br>Step 2: Acquire Compatible Tokens<br>Purchase the tokens you wish to swap on a centralized exchange or through peer-to-peer transactions. Ensure that they are compatible with LiFi Swap.<br><br>Step 3: Connect to LiFi Swap<br>Access the LiFi Swap platform through its official website. Connect your wallet to the platform by following the on-screen prompts.<br><br>Step 4: Choose Your Swap<br>Select the tokens you wish to swap from the available options. Input the amount you want to exchange and review the transaction details.<br><br>Step 5: Execute the Swap<br>Once you’re satisfied with the transaction details, confirm the swap. LiFi Swap will process the transaction using Li-Fi technology, ensuring a fast and secure exchange.<br><br>Step 6: Monitor Your Transactions<br>After executing the swap, you can monitor your transaction status on the LiFi Swap platform or through your wallet interface. Ensure that the tokens have been successfully swapped and are reflected in your wallet.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">LiFi Swap represents a significant leap forward in the realm of digital asset exchanges, leveraging innovative Li-Fi technology to facilitate fast, secure, and cost-effective transactions. By combining the benefits of light-based communication with blockchain technology, LiFi Swap aims to enhance the overall user experience in the cryptocurrency space.<br><br>As the demand for efficient digital asset trading continues to grow, the potential for LiFi Swap to disrupt traditional exchange methods is immense. While challenges remain, the future of LiFi Swap looks promising, with opportunities for increased adoption, technological integration, and expanded use cases.<br><br>For users looking to navigate the evolving landscape of cryptocurrency and decentralized finance, LiFi Swap offers a glimpse into the future of wireless communication and digital asset exchanges, paving the way for a new era of financial transactions.<br><br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uAdDQw8jKY",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
